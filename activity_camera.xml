@@ -70,12 +70,13 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="308dp"
-        android:layout_height="57dp"
+        android:layout_width="320dp"
+        android:layout_height="86dp"
         android:fontFamily="@font/josefinsans"
         android:text="Take a picture of the sunscreen's active ingredients
 or use an existing image of the active ingredients."
         android:textAlignment="center"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/newImage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
