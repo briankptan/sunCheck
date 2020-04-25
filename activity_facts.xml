@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".facts">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_facts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:itemIconTint="@color/colorPrimary"
+        app:itemTextColor="@color/colorPrimary"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <ScrollView
+        android:layout_width="413dp"
+        android:layout_height="675dp"
+        app:layout_constraintBottom_toTopOf="@+id/nav_facts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="384dp"
+            android:layout_height="666dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:autoLink="web"
+            android:fontFamily="@font/josefinsans"
+            android:paddingRight="40dp"
+            android:text="EFFECTS OF OXYBENZONE AND OTHER CHEMICALS FOUND IN SUNSCREEN\n\nEach year, up to
+14,000 tons of sunscreen is washed off into the ocean. Wearing sunscreen is allegedly a healthy habit,
+however, it can have devastating effects on the environment, especially our oceans. Research has shown the
+exponential effects of sunscreen on marine life. In one study, conducted by Danovaro et al. (2008), it was
+found that even in small doses, sunscreen can be deadly. The researcher applied the recommended amount
+of sunscreen to volunteers' hands and had the volunteers immerse their hands into 2L containers containing
+various species of coral. Within 96 hours, all of the coral exposed to the sunscreen were completely bleached.\n\n
+Oxybenzone (BP-3) and octinoxate are two of the popular of many harmful chemicals found in 3,500+ skin care
+products worldwide. These chemicals are highly toxic to juvenile corals and other marine life and can enter
+the environment through both wastewater and directly from swimmers wearing sunscreen. Research has shown
+four major toxic effects in coral: increased susceptibility to bleaching, DNA damage, abnormal skeleton growth,
+and gross deformities of baby coral.\n\nIn addition to damaging coral, sunscreen chemicals can have devastating
+effects on algae, fish, and even dolphins.
+\n\nTo learn even more about the effects of sunscreen on marine life, visit\n
+oceanservice.noaa.gov\n
+marinesafe.org/blog/2016/03/18/sunscreen-pollution/\n
+seagoinggreen.org/blog/2018/2/12/how-is-sunscreen-actually-affecting-the-marine-environment\n
+icriforum.org/sites/default/files/ICRI_Sunscreen_0.pdf\n\n\n\n"
+            android:textAlignment="center"
+            android:textColorLink="@color/colorText1"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/nav_facts"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.513"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
